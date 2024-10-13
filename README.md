@@ -40,9 +40,6 @@ As I progress, I’ll dive deeper into advanced topics, including:
 ## 🤝 Join My Journey
 This repository is a work in progress, and I am eager to connect with fellow learners and experienced developers. Your feedback, suggestions, and contributions are always welcome! Let’s collaborate to enhance our skills and share knowledge.
 
-### 💬 Inspiring Quotes to Motivate:
-> "The only way to do great work is to love what you do." - Steve Jobs  
-> "Programming isn’t about what you know; it’s about what you can figure out." - Chris Pine
 
 ## 🌐 Connect with Me
 I’d love to connect and share our learning journeys. Feel free to reach out to me on the following platforms:
