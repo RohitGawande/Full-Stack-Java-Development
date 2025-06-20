@@ -1,0 +1,49 @@
+package JDBC1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+import java.sql.SQLException;
+
+public class InsertApp {
+
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    
+
+    
+         
+            // Step 2: Establish Connection
+            String url = "jdbc:mysql:///studentdb";
+            String username = "Rohit";     // Replace with your username
+            String password = "Rohit";     // Replace with your password
+
+            Connection connection = DriverManager.getConnection(url, username, password);
+            System.out.println("CONNECTION object created ");
+
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the name of the Student::");
+            String sname=sc.nextLine();
+            System.out.println("Enter the age of the Student::");
+            int sage=sc.nextInt();
+            System.out.println("Enter the address of the Student::");
+            String sadd=sc.nextLine();
+            // Step 3: Create Statement Object
+            Statement statement = connection.createStatement();
+            System.out.println("STATEMENT object created ");
+            // Step 4: Execute Query and Process ResultSet
+            String sqlInsertQuery = String.format("insert into student(`sname`,`sage`,`sadd`) values('%s',%d,'%s')",sname,sage,sadd);
+            System.out.println(sqlInsertQuery);
+            int rowsAffected = statement.executeUpdate(sqlInsertQuery);
+            
+         System.out.println("No. of rows Updated::"+rowsAffected);
+        
+            // Step 6: Close resources
+        	
+        	statement.close();
+        	connection.close();
+        	System.out.println("Closing the resources...");
+           
+    }
+}

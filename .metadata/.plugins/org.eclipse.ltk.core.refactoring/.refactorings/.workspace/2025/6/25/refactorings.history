@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;JDBC3&apos; to &apos;JDBC3DyanmicInput&apos;&#x0D;&#x0A;- Original element: &apos;JDBC3&apos;&#x0D;&#x0A;- Renamed element: &apos;JDBC3&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;JDBC3&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=JDBC3" name="JDBC3DyanmicInput" references="true" stamp="1750330747331" version="1.0"/>
+</session>

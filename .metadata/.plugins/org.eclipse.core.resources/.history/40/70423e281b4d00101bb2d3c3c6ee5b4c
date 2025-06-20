@@ -1,0 +1,69 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.sql.SQLException;
+import java.util.List;
+
+public class StudentManagementGUI extends JFrame {
+    private JTextField sidField, snameField, sageField, saddField;
+    private JTextArea outputArea;
+    private StudentDAO dao;
+
+    public StudentManagementGUI() {
+        dao = new StudentDAO();
+        setTitle("Student Management System");
+        setSize(500, 400);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setLayout(new BorderLayout());
+
+        JTabbedPane tabbedPane = new JTabbedPane();
+
+        // Panel for Add Student
+        JPanel addPanel = new JPanel(new GridLayout(5, 2, 5, 5));
+        sidField = new JTextField();
+        snameField = new JTextField();
+        sageField = new JTextField();
+        saddField = new JTextField();
+        JButton addBtn = new JButton("Add Student");
+        addBtn.addActionListener(e -> insertStudent());
+        addPanel.add(new JLabel("SID:"));
+        addPanel.add(sidField);
+        addPanel.add(new JLabel("Name:"));
+        addPanel.add(snameField);
+        addPanel.add(new JLabel("Age:"));
+        addPanel.add(sageField);
+        addPanel.add(new JLabel("Address:"));
+        addPanel.add(saddField);
+        addPanel.add(new JLabel());
+        addPanel.add(addBtn);
+
+        // Panel for View All Students
+        JPanel viewPanel = new JPanel(new BorderLayout());
+        outputArea = new JTextArea();
+        JButton viewBtn = new JButton("View All Students");
+        viewBtn.addActionListener(e -> viewStudents());
+        viewPanel.add(viewBtn, BorderLayout.NORTH);
+        viewPanel.add(new JScrollPane(outputArea), BorderLayout.CENTER);
+
+        // Panel for Update Student
+        JPanel updatePanel = new JPanel(new GridLayout(5, 2, 5, 5));
+        JTextField usidField = new JTextField();
+        JTextField unameField = new JTextField();
+        JTextField uageField = new JTextField();
+        JTextField uaddField = new JTextField();
+        JButton updateBtn = new JButton("Update Student");
+        updateBtn.addActionListener(e -> updateStudent(usidField, unameField, uageField, uaddField));
+        updatePanel.add(new JLabel("SID to Update:"));
+        updatePanel.add(usidField);
+        updatePanel.add(new JLabel("New Name:"));
+        updatePanel.add(unameField);
+        updatePanel.add(new JLabel("New Age:"));
+        updatePanel.add(uageField);
+        updatePanel.add(new JLabel("New Address:"));
+        updatePanel.add(uaddField);
+        updatePanel.add(new JLabel());
+        updatePanel.add(updateBtn);
+
+        // Panel for Delete Student
+        JPanel deletePanel = new JPanel(new GridLayout(2, 2, 5, 5));

@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author Asus
+ *
+ */
+module StudentManagement {
+	requires java.sql;
+}

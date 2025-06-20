@@ -1,0 +1,23 @@
+package JDBC1;
+
+import java.sql.DriverManager;
+
+public class TestApp {
+    public static void main(String[] args) {
+    	Connection connection=null;
+        try {
+            // Step 1: Load and register the driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver loaded successfully!");
+            
+            //Step 2: Establish the Connection
+            String url="jdbc:mysql://localhost:3306/JDBC";
+            String userName="Rohit";
+            String pwd="RohitG";
+           connection= DriverManager.getConnection(url,userName,pwd);
+
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver not found: " + e.getMessage());
+        }
+    }
+}

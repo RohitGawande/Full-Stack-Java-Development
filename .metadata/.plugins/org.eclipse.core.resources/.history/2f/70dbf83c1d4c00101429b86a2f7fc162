@@ -1,0 +1,16 @@
+package JDBC1;
+
+
+
+public class TestApp {
+    public static void main(String[] args) {
+        try {
+            // Step 1: Load and register the driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver loaded successfully!");
+
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver not found: " + e.getMessage());
+        }
+    }
+}
