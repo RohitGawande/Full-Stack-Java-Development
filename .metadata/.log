@@ -588,3 +588,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE The project description file (.project) for 'JDBC3DyanmicInput' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:15:18.340
 !MESSAGE The project description file (.project) for 'StudentManagement' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 2 2025-06-20 18:20:19.096
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'HB02-PersistApp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'HB02_PersistApp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'JDBC1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'JDBC2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'JDBC3DyanmicInput' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-06-20 18:20:19.096
+!MESSAGE The project description file (.project) for 'StudentManagement' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
