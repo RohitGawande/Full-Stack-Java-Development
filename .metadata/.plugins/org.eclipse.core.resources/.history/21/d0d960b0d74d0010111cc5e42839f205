@@ -1,0 +1,17 @@
+package main;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+public class PropertiesApp {
+public static void main(String[] args) throws Exception {
+FileInputStream fis=new FileInputStream("C:/Users/Asus/Desktop/Java Developer/JDBC/src/in/main/application.properties");
+Properties properties=new Properties();
+properties.load(fis);
+String url=properties.getProperty("url");
+String user=properties.getProperty("user");
+String password=properties.getProperty("password");
+System.out.println("URL IS::"+url);
+System.out.println("USER IS::"+user);
+System.out.println("PWD IS::"+password);
+}
+}

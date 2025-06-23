@@ -1,0 +1,3 @@
+String url = "jdbc:mysql://studentdb"; 
+String user = "Rohit";
+String password = "Rohit";
