@@ -5,6 +5,6 @@
  * @author Asus
  *
  */
-module JDBC1 {
+module TestApp {
 	requires java.sql;
 }
