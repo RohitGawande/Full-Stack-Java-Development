@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import in.rohit.model.Student;
 import in.rohit.util.HibernateUtil;
 
-public class LoadRecordApp {
+public class TestApp {
 
 	public static void main(String[] args) throws Exception {
 
