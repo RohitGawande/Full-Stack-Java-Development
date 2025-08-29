@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="HAS-A Relationship in Java/01-PrimitiveValue-Injection/src"/>
+	<classpathentry kind="src" path="HAS-A Relationship in Java/02-One-One-Association-mapping/src"/>
+	<classpathentry kind="src" path="HAS-A Relationship in Java/03-One-MANY-Association-mapping/src"/>
+	<classpathentry kind="src" path="HAS-A Relationship in Java/04-MANY-ONE-Association-mapping/src"/>
+	<classpathentry kind="src" path="HAS-A Relationship in Java/05-MANY-MANY-Association-mapping/src"/>
+	<classpathentry kind="output" path="HAS-A Relationship in Java/01-PrimitiveValue-Injection/bin"/>
+</classpath>
