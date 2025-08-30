@@ -1,13 +1,2 @@
 INDEX VERSION 1.131+C:\Users\Asus\Desktop\Full Stack Java Development\.metadata\.plugins\org.eclipse.jdt.core
-3152807052.index
-892314623.index
-3862460584.index
-2992134832.index
 1865797976.index
-1162172272.index
-2888233541.index
-3588995722.index
-1717677946.index
-1940214200.index
-4066987222.index
-2266692911.index
