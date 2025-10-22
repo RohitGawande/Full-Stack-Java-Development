@@ -15,9 +15,9 @@
 	<!-- parameters by index -->
 	<bean id="std2" class="in.rohit.comp.Student">
 		<constructor-arg index="2" value="MI" />
-		<constructor-arg index="1" value="sachin" />
-		<constructor-arg index="3" value="54.5f" />
-		<constructor-arg index="0" value="10" />
+		<constructor-arg index="1" value="Rohit" />
+		<constructor-arg index="3" value="50.5f" />
+		<constructor-arg index="0" value="45" />
 	</bean>
 	
 	<!-- parameters by names -->
@@ -30,9 +30,9 @@
 	
 	<!-- parameters by name , type and index -->
 	<bean id="std4" class="inrohit.comp.Student">
-		<constructor-arg name="saddr" type="java.lang.String" index = "2" value="DC" />
-		<constructor-arg name="sname" type="java.lang.String" index = "1" value="Warner" />
-		<constructor-arg name="avg" type="java.lang.Float" index = "3" value="52.5f" />
-		<constructor-arg name="sno" type="java.lang.Integer" index = "0" value="" />
+		<constructor-arg name="saddr" type="java.lang.String" index = "2" value="PBKS" />
+		<constructor-arg name="sname" type="java.lang.String" index = "1" value="Yuvraj" />
+		<constructor-arg name="avg" type="java.lang.Float" index = "3" value="50.5f" />
+		<constructor-arg name="sno" type="java.lang.Integer" index = "0" value="12" />
 	</bean>
 </beans>
