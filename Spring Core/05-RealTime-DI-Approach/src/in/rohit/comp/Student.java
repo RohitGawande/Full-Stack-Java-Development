@@ -1,26 +1,19 @@
-package in.rohit.comp;
+package in.ineuron.comp;
 
-public class Student {
-	private Integer sno;
-	private String sname;
-	private String saddr;
-	private Float avg;
+public class BlueDart implements Courier {
 
 	static {
-		System.out.println("Student.class file is loading...\n");
+		System.out.println("BlueDart.class file is loading...");
 	}
 
-	public Student(Integer sno, String sname, String saddr, Float avg) {
-		this.sno = sno;
-		this.sname = sname;
-		this.saddr = saddr;
-		this.avg = avg;
-		System.out.println("Student:: 4 param constructor");
+	public BlueDart() {
+		System.out.println("BlueDart:: Zero param constructor...");
 	}
 
 	@Override
-	public String toString() {
-		return "Student [sno=" + sno + ", sname=" + sname + ", saddr=" + saddr + ", avg=" + avg + "]";
+	public String deliver(int oid) {
+		System.out.println("BlueDart.deliver()");
+		return "BlueDart Courier will delived with the order id ::"+oid+" for the ordered products";
 	}
 
 }
