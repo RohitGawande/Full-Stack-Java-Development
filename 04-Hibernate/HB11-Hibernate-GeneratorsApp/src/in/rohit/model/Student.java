@@ -1,28 +1,15 @@
-package in.rohit.model;
+package in.ineuron.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class Student {
 
-	/*
-	 * @GenericGenerator(name = "gen1",strategy = "increment") 
-	 * @GeneratedValue(generator = "gen1")
-	 */
-	/*
-	 * @Id
-	 * 
-	 * @GenericGenerator(name = "gen1", strategy = "sequence", parameters = {
-	 					@Parameter(value = "sid_seq", name = "sequence_name") })
-	   @GeneratedValue(generator = "gen1")
-	 */
 	@Id
-	@GenericGenerator(name="gen1",strategy = "identity")
-	@GeneratedValue(generator = "gen1")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer sid;
 	private String sname;
 	private String saddress;

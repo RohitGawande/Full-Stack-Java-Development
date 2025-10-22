@@ -1,11 +1,11 @@
 package in.rohit.test;
-import in.rohit.util.*;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import in.ineuron.model.Student;
-import in.ineuron.util.HibernateUtil;
+import in.rohit.model.Student;
+import in.rohit.util.HibernateUtil;
 
 public class InsertRecordApp {
 
@@ -17,16 +17,17 @@ public class InsertRecordApp {
 		Integer id = null;
 
 		try {
-			session = in.rohit.util.HibernateUtil.getSession();
-
+			session = HibernateUtil.getSession();
+			System.out.println(session);
+			
 			if (session != null)
 				transaction = session.beginTransaction();
 
 			if (transaction != null) {
-				InsertRecordApp student = new InsertRecordApp();
+				Student student = new Student();
 
 				student.setSaddress("RCB");
-				student.setSage(33);
+				student.setSage(35);
 				student.setSname("Kohli");
 
 				id = (Integer) session.save(student);
@@ -35,6 +36,7 @@ public class InsertRecordApp {
 
 		} catch (HibernateException e) {
 			e.printStackTrace();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
