@@ -1,35 +1,28 @@
-package in.rohit.test;
+package in.ineuron.test;
 
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.core.io.FileSystemResource;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-import in.rohit.comp.Student;
+import in.ineuron.comp.Flipkart;
 
-@SuppressWarnings("deprecation")
 public class TestApp {
 
-	public static void main(String[] args) {
-		FileSystemResource resource = new FileSystemResource("src/in/rohit/cfg/applicationContext.xml");
-		XmlBeanFactory factory = new XmlBeanFactory(resource);
+	public static void main(String[] args) throws Exception {
 
-		Student std1 = factory.getBean("std1", Student.class);
-		System.out.println(std1);
+		DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
+		System.out.println("*****CONTAINER STARTED****\n");
 
+		System.in.read();
+
+		Flipkart flipkart = factory.getBean("fpkt", Flipkart.class);
+		System.out.println(flipkart);
 		System.out.println();
+		String result = flipkart.doShopping(new String[] { "fossil", "tissot" }, new float[] { 23456.5f, 12345.5f });
+		System.out.println(result);
 
-		Student std2 = factory.getBean("std2", Student.class);
-		System.out.println(std2);
-
-		System.out.println();  
-
-		Student std3 = factory.getBean("std3", Student.class);
-		System.out.println(std3);
-		
-		System.out.println();
-		
-		Student std4 = factory.getBean("std4", Student.class);
-		System.out.println(std4);
+		System.out.println("\n*****CONTAINER STOPPED****");
 
 	}
-
 }
