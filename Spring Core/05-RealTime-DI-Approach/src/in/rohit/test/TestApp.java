@@ -11,7 +11,7 @@ public class TestApp {
 
 		DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
-		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
+		reader.loadBeanDefinitions("in/rohit/cfg/applicationContext.xml");
 		System.out.println("*****CONTAINER STARTED****\n");
 
 		System.in.read();
