@@ -1,9 +1,9 @@
-package in.ineuron.test;
+package in.rohit.test;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-import in.ineuron.comp.Flipkart;
+import in.rohit.comp.Flipkart;
 
 public class TestApp {
 
