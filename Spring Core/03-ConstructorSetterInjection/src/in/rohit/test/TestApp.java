@@ -1,31 +1,23 @@
 package in.rohit.test;
 
-import org.springframework.context.ApplicationContext;
+import java.util.Arrays;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import in.rohit.comp.WishMessageGenerator;
 
-public class ConstructorInjectionApp {
+public class TestApp {
 
-    public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext(
+				"in/rohit/cfg/applicationContext.xml");
+		System.out.println("Bean count is :: " + factory.getBeanDefinitionCount());
+		System.out.println("Bean id is    :: " + Arrays.toString(factory.getBeanDefinitionNames()));
 
-        System.out.println("***********ApplicationContext container starting************");
+		WishMessageGenerator wmg = factory.getBean("wmg", WishMessageGenerator.class);
+		System.out.println("\n" + wmg);
 
-        // Load XML config from classpath
-        ApplicationContext context = 
-                new ClassPathXmlApplicationContext("applicationcontext.xml");
+		factory.close(); //closing the resources 
+	}
 
-        System.out.println("***********ApplicationContext container started*************");
-
-        // Get bean
-        WishMessageGenerator wishMessage = context.getBean("wmg", WishMessageGenerator.class);
-        System.out.println(wishMessage);
-
-        String result = wishMessage.generateMessage("kohli");
-        System.out.println(result);
-
-        System.out.println("\n*******ApplicationContext is closing***********");
-
-        ((ClassPathXmlApplicationContext) context).close(); // close container
-    }
 }
