@@ -23,7 +23,7 @@
 		<constructor-arg name="a" ref="a1" />
 	</bean>
 -->
-	<bean id="a1" class="in.ineuron.comp.A">
+	<bean id="a1" class="in.rohit.comp.A">
 		<property name="b" ref="b1"/>
 	</bean>
 
