@@ -3,8 +3,8 @@ package in.rohit.test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-import in.ineuron.comp.A;
-import in.ineuron.comp.B;
+import in.rohit.comp.A;
+import in.rohit.comp.B;
 
 public class TestApp {
 
@@ -12,7 +12,7 @@ public class TestApp {
 
 		DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
-		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
+		reader.loadBeanDefinitions("in/rohit/cfg/applicationContext.xml");
 		System.out.println("*****CONTAINER STARTED****\n");
 
 		System.in.read();
