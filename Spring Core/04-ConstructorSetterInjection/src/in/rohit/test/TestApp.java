@@ -3,7 +3,7 @@ package in.rohit.test;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.FileSystemResource;
 
-import in.rohit.bo.Student;
+import in.rohit.comp.Student;
 
 @SuppressWarnings("deprecation")
 public class TestApp {
