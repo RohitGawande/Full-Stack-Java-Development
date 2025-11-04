@@ -3,7 +3,7 @@ package in.rohit.test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-import in.rohit.comp.Student;
+import in.rohit.bo.Student;
 
 public class AdvancedBeanFactoryApp {
 
